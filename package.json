@@ -1,0 +1,24 @@
+{
+  "name": "lecture-pug-templating",
+  "version": "1.0.0",
+  "description": "code along with joe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wisbell/lecture-pug-templating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wisbell/lecture-pug-templating/issues"
+  },
+  "homepage": "https://github.com/Wisbell/lecture-pug-templating#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
+  }
+}

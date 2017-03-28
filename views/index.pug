@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title pug demo
+    include stylesheets.pug
+
+  body
+    h1 Whattt, Crazy Pug
+    h2= subtitle
+    //- or
+    //- h2 #{subtitle}
+
+    //- makes a div without declaring it - use . for class # for id
+    .names
+      ul
+        each name in names
+          li Hello, #{name}
+
+    //- using javascript with-in pug file
+    - let wtf = "js is in my pug, wut?"
+
+    //- adding attributes to an element - wtf is a variable
+    input(type='text' placeholder=wtf)
+
+    block content
+      p This is here my default
+
+    .footer-nav
+      //- conditional class using object mapping
+      //- class will be active if logged in is true
+      a.foot-nav(class={active: loggedIn === true} href='/') Logout
+      a.foot-nav(class={active: loggedIn === false} href='/') Login/Register
+
+      //- if loggedIn
+      //-   a.foot-nav(class=active href='/') Logout
+      //- else
+      //-   a.foot-nav(class=active href='/') Login/Register
